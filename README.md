@@ -1,6 +1,6 @@
 # Simple Auth System
 
-**"Simple Auth System" est un programme créer en Python vous permettant de faire de fausse vidéo sur le minage de crypto monnaie sur TikTok**
+**Ce programme est un système de vérification de pseudo et de mot de passe rapide et facile utilisant pastebin.**
 
 **Login: Hyden**
 
