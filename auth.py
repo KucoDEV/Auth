@@ -4,7 +4,7 @@ import time
 from random import randrange
 from pystyle import *
 from colorama import Fore, Style
-
+import progressbar
 ascii = '''
  ▄▄▄       █    ██ ▄▄▄█████▓ ██░ ██ 
 ▒████▄     ██  ▓██▒▓  ██▒ ▓▒▓██░ ██▒
@@ -38,6 +38,21 @@ if username == "Auth":
             proxies = randrange(500)
 
             print(Fore.WHITE + Style.BRIGHT + "\n [" + Fore.RED + "!" + Fore.WHITE + "]" + Fore.RED + " Vous êtes connecter au serveur." + Fore.RESET)
+            
+            t = 0.0
+
+            print(Style.BRIGHT + Fore.RED)
+            bar = progressbar.ProgressBar(maxval=10, widgets=[
+	            ' Lancement... ',
+	            progressbar.Bar(left='| ', marker='█', right=' | '),
+	            progressbar.SimpleProgress(),
+            ]).start()
+            
+            while t <= 10.0:
+                bar.update(t)
+                time.sleep(0.1)
+                t += 0.1
+            bar.finish()
     except:
         print(Fore.WHITE + Style.BRIGHT + "\n [" + Fore.RED + "!" + Fore.WHITE + "]" + Fore.RED + " Je n'arrive pas à me connecter au serveur !\nVeuillez vérifier votre connection internet." + Fore.RESET)
         time.sleep(5)
