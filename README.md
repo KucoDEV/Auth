@@ -31,4 +31,4 @@ Une fois connecté avec succès, le système affichera une animation de chargeme
 Ce projet est un exemple éducatif. Ne l'utilisez pas pour des applications nécessitant une authentification sécurisée sans ajouter des mesures de sécurité adaptées.
 
 ## 📜 Licence
-Ce projet est sous licence MIT - voir le fichier LICENSE pour plus de détails.
+Ce projet est sous licence MIT. Vous êtes libre de le modifier et de le redistribuer.
