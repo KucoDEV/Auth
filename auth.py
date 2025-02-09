@@ -37,13 +37,13 @@ if username == "Auth":
             z = randrange(500)
             proxies = randrange(500)
 
-            print(Fore.WHITE + Style.BRIGHT + "\n [" + Fore.RED + "!" + Fore.WHITE + "]" + Fore.RED + " Vous êtes connecter au serveur." + Fore.RESET)
+            print(Fore.WHITE + Style.BRIGHT + "\n [" + Fore.RED + "!" + Fore.WHITE + "]" + Fore.RED + " You are connected to the server." + Fore.RESET)
             
             t = 0.0
 
             print(Style.BRIGHT + Fore.RED)
             bar = progressbar.ProgressBar(maxval=10, widgets=[
-	            ' Lancement... ',
+	            ' Starting... ',
 	            progressbar.Bar(left='| ', marker='█', right=' | '),
 	            progressbar.SimpleProgress(),
             ]).start()
@@ -54,8 +54,8 @@ if username == "Auth":
                 t += 0.1
             bar.finish()
     except:
-        print(Fore.WHITE + Style.BRIGHT + "\n [" + Fore.RED + "!" + Fore.WHITE + "]" + Fore.RED + " Je n'arrive pas à me connecter au serveur !\nVeuillez vérifier votre connection internet." + Fore.RESET)
+        print(Fore.WHITE + Style.BRIGHT + "\n [" + Fore.RED + "!" + Fore.WHITE + "]" + Fore.RED + " I can't connect to the server!\nPlease check your internet connection." + Fore.RESET)
         time.sleep(5)
         exit()
 else:
-    input(Fore.WHITE + Style.BRIGHT + "\n [" + Fore.RED + "!" + Fore.WHITE + "]" + Fore.RED + " Je ne trouve pas de compte nommé '" + Fore.WHITE + f"{username}" + Fore.RED + "'.")
+    input(Fore.WHITE + Style.BRIGHT + "\n [" + Fore.RED + "!" + Fore.WHITE + "]" + Fore.RED + " I can't find an account named '" + Fore.WHITE + f"{username}" + Fore.RED + "'.")

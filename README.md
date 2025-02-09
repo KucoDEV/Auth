@@ -1,34 +1,34 @@
 # 🔐 Simple Auth System
 
 ## 📜 Description
-Ce projet est un simple système d'authentification écrit en Python qui vérifie les informations d'identification à partir d'un fichier distant hébergé sur Pastebin. Il intègre également un affichage stylisé et un indicateur de progression pour améliorer l'expérience utilisateur.
+This project is a simple authentication system written in Python that verifies credentials from a remote file hosted on Pastebin. It also includes a stylized display and a progress indicator to enhance the user experience.
 
-## ⚡ Fonctionnalités
-- Authentification basée sur un pseudo et un mot de passe.
-- Vérification des identifiants via une requête HTTP.
-- Affichage d'un texte ASCII stylisé.
-- Animation de chargement avec une barre de progression.
+## ⚡ Features
+- Authentication based on a username and password.
+- Credential verification via an HTTP request.
+- Display of stylized ASCII text.
+- Loading animation with a progress bar.
 
-## 🛠️ Prérequis
-Assurez-vous d'avoir Python installé sur votre machine ainsi que les modules suivants :
+## 🛠️ Prerequisites
+Make sure you have Python installed on your machine as well as the following modules:
 
 ```
 pip install requests pystyle colorama progressbar2
 ```
 
-## 🚀 Installation et exécution
-1. Clonez ce repository ou téléchargez le fichier `auth.py`.
-2. Exécutez le script avec la commande :
+## 🚀 Installation and Execution
+1. Clone this repository or download the `auth.py` file.
+2. Run the script with the command:
    ```
    python auth.py
    ```
-3. Entrez votre pseudo et votre mot de passe lorsqu'ils vous sont demandés.
+3. Enter your username and password when prompted.
 
-## 🖥️ Démonstration
-Une fois connecté avec succès, le système affichera une animation de chargement et confirmera l'accès au serveur.
+## 🖥️ Demonstration
+Once successfully logged in, the system will display a loading animation and confirm access to the server.
 
-## ⚠️ Avertissement
-Ce projet est un exemple éducatif. Ne l'utilisez pas pour des applications nécessitant une authentification sécurisée sans ajouter des mesures de sécurité adaptées.
+## ⚠️ Warning
+This project is an educational example. Do not use it for applications requiring secure authentication without adding appropriate security measures.
 
-## 📜 Licence
-Ce projet est sous licence MIT. Vous êtes libre de le modifier et de le redistribuer.
+## 📜 License
+This project is licensed under the MIT license. You are free to modify and redistribute it.
